@@ -3,7 +3,7 @@
 //use this for Vanila Javascript.
 'use strict';
 
-//2. variable
+//2. variable, rw(read/write)
 // let (added in ES6)
 
 let globalName = 'golobal name';
@@ -28,13 +28,24 @@ console.log(age);
 
 age = 30;
 
-//3. Constatns
+//3. Constatn, r(read only)
+//use const whenever possibile.
+//only use let if variable needs to change.
+
 //favor imuutable data type always for a few reasons:
 // - security
 // - thread safety
 // - reduce human mistakes
 const daysInWeek = 7;
 const maxNumber = 5;
+
+//Note!
+//Immutable data types: premitive types, frozen objects (i.e. object.freeze())
+//Mutable ata types: all objects by default are mutable in JS
+//favor immutable data type always for a few reasons:
+// - security
+// - thread safety
+// - reduce human mistakes
 
 
 //4.Variavle types
