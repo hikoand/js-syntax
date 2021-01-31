@@ -104,6 +104,7 @@ const sumAgain = sum;
 console.log(sumAgain(1, 3));
 
 //2. Callback function using function expression
+//상황에 맞게 특정 함수를 부르는 것
 function randomQuiz(answer, printYes, printNo) {
   if (answer === "love you") {
     printYes();
@@ -120,12 +121,11 @@ const printYes = function () {
 //named function
 //better debugging in debugger's stack traces
 //recursions
-/* const printNo = function print() {
-      console.log('no!');
-      print();
-  };
-  randomQuiz('wrong', printYes, printNo);
-  randomQuiz('love you', printYes, printNo); */
+const printNo = function print() {
+  console.log("no!");
+};
+randomQuiz("wrong", printYes, printNo);
+randomQuiz("love you", printYes, printNo);
 
 // Arrow function
 // always anonymous
@@ -141,6 +141,7 @@ const simpleMultiply = (a, b) => {
 };
 
 //IIFE: Immedately Invoked Function Expression
+//선언함과 동시에 호출
 (function hello() {
   console.log("IIFE");
 })();

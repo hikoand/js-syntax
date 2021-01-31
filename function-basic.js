@@ -18,3 +18,19 @@ doSomething();
 
 const result = add(1, 2);
 console.log(result);
+
+//함수자체를 인자로 전달하기
+//function something(sub()) 처럼 함수안에 함수()를 호출하면 값이 출력됨
+//함수자체로 출력하기 위해선 ()를 쓰지않고 함수이름만 인자로 전달해야함
+function something(sub) {
+  console.log(sub);
+  const result_2 = sub(10, 9);
+  console.log(result_2);
+}
+
+function sub(a, b) {
+  const sum_2 = a - b;
+  return sum_2;
+}
+
+something(sub);
