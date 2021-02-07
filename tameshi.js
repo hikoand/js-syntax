@@ -1,4 +1,5 @@
 "use strict";
+//constructor = 생성자
 
 class Person {
   constructor(name, age) {
@@ -44,7 +45,7 @@ apple.speak();
 커피갯수를 -1로 설정하면 안됌
 그래서 getter and setter를 사용함
 
-사용지가 멍청하게 -1 설정해도 우리는 setter를 이용해 0 으로 만들어줌 
+사용자가 멍청하게 -1 설정해도 우리는 setter를 이용해 0 으로 만들어줌 
 처음부터 다른 사람이 int를 설정하지 못하게,
  커피갯수를 privit 으로 만듬 = incapsulation */
 
@@ -80,6 +81,9 @@ console.log(user1.age);
 
 //setter를 정의하는 순간, =age (55) 를 호출 할 때 (값을 할당할 때) 바로 메모리 값을 할당하는게 아니라,
 //setter를 호출하게됨
-//즉 전달된 value를 this.age에 할당할 때 , 메모리 값을 업데이트 하는 것이 아니라,
+//즉 전달된 value를 this.age에 할당할 때, 메모리 값을 업데이트 하는 것이 아니라
 //setter를 호출하게되서 이 것이 무한으로 반복됨
 //그래서 다른 이름을 지정해줌 _age
+
+//getters => access properties
+//setters => change (mutate) them
