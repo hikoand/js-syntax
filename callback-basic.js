@@ -26,3 +26,9 @@ function alertNum(num) {
 
 const printCounter = new Counter(printSomething);
 const alerCounter = new Counter(alertNum);
+
+printCounter.increase();
+printCounter.increase();
+printCounter.increase();
+printCounter.increase();
+printCounter.increase();
